@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UI Design Card Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Fira+Code:wght@400;700&family=Inter:wght@400;500;700;900&family=Playfair+Display:wght@700&family=Roboto:wght@400;500;700&family=Orbitron:wght@700;900&display=swap" rel="stylesheet">
+    <style>
+      /* Custom fonts for theme authenticity */
+      .font-inter { font-family: 'Inter', sans-serif; }
+      .font-roboto { font-family: 'Roboto', sans-serif; }
+      .font-playfair { font-family: 'Playfair Display', serif; }
+      .font-fira-code { font-family: 'Fira Code', monospace; }
+      .font-orbitron { font-family: 'Orbitron', sans-serif; }
+      .font-times { font-family: 'Times New Roman', Times, serif; }
+
+      /* Keyframes for animations */
+      @keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+
+      /* Custom active states for Neumorphism and Claymorphism */
+      .neo-button-card:active {
+        box-shadow: inset 5px 5px 10px #bebebe, inset -5px -5px 10px #ffffff;
+      }
+      .clay-button-card:active {
+        box-shadow: inset 4px 4px 8px #d1d9e6, inset -4px -4px 8px #ffffff;
+      }
+      .clay-button-card-primary:active {
+        box-shadow: inset 4px 4px 8px #a6c1e8, inset -4px -4px 8px #d2e1ff;
+      }
+      .neo-button-detail:active {
+        box-shadow: inset 7px 7px 15px #bec8e4, inset -7px -7px 15px #ffffff;
+      }
+      .clay-button-detail:active {
+        box-shadow: inset 6px 6px 12px #d1d9e6, inset -6px -6px 12px #ffffff;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@18.2.0",
+    "react/jsx-runtime": "https://esm.sh/react@18.2.0/jsx-runtime",
+    "react-dom": "https://esm.sh/react-dom@18.2.0",
+    "react-dom/client": "https://esm.sh/react-dom@18.2.0/client",
+    "react-dom/": "https://esm.sh/react-dom@18.2.0/",
+    "react/": "https://esm.sh/react@18.2.0/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
