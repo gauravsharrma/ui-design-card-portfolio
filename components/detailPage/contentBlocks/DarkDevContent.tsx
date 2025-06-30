@@ -30,7 +30,7 @@ const DarkDevContent: React.FC<{ palette: Palette }> = ({ palette }) => {
             </div>
             <div className="p-4 bg-black/20 border-t" style={{ borderColor: 'rgba(255,255,255,0.1)'}}>
                 <p className='text-green-400'><Icon name="check-circle" className="inline-block w-4 h-4 mr-2" />Compilation successful.</p>
-                <p style={{color: palette.text}}>> Ready for deployment.</p>
+                <p style={{color: palette.text}}>Ready for deployment.</p>
             </div>
           </div>
         </div>
